@@ -1,5 +1,7 @@
+import { SourceMap } from "module";
 import { resolve } from "path";
-import { defineConfig } from "vite";
+import { build, defineConfig } from "vite";
+
 
 export default defineConfig({
   root: "src/",

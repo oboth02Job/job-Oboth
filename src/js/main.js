@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
+//Form
 document.addEventListener("DOMContentLoaded", () => {
   const ctaBtn = document.getElementById("cta-register-btn");
   const formSection = document.getElementById("register-form");

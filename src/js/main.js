@@ -38,3 +38,22 @@ document.addEventListener('DOMContentLoaded', () => {
     sortedProducts.forEach(p => productList.appendChild(p.element));
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ctaBtn = document.getElementById("cta-register-btn");
+  const formSection = document.getElementById("register-form");
+
+  ctaBtn.addEventListener("click", () => {
+    formSection.classList.toggle("hidden");
+    formSection.scrollIntoView({ behavior: "smooth" });
+  });
+
+  const registerForm = document.getElementById("registerUser");
+  registerForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thanks for registering! (Form not connected to backend yet.)");
+    registerForm.reset();
+    formSection.classList.add("hidden");
+  });
+});

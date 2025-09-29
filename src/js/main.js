@@ -56,4 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
     registerForm.reset();
     formSection.classList.add("hidden");
   });
-});
+});   
+
